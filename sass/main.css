@@ -98,6 +98,7 @@ body main .main--Section1__Home {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  scroll-padding-top: 10px;
 }
 body main .main--Section1__Home article {
   display: flex;
@@ -390,4 +391,5 @@ body main .main--Section4__Contact form a:hover {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 12em;
 }/*# sourceMappingURL=main.css.map */
