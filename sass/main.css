@@ -47,9 +47,39 @@ header nav a {
   text-decoration: none;
   color: white;
   margin: 0em 0.5em;
+  font-weight: bold;
+  font-size: 0.8em;
 }
 header nav a:hover {
-  border-bottom: 1px solid white;
+  -webkit-animation: fluido 10s ease-in-out infinite;
+          animation: fluido 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@-webkit-keyframes fluido {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+@keyframes fluido {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 body {
@@ -57,12 +87,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body main {
   color: white;
 }
 body main .main--Section1__Home {
-  margin: 10em 0em;
+  margin: 8em 0em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,7 +140,7 @@ body main .main--Section2__aboutMe article {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  height: 20em;
+  height: 19em;
   text-align: center;
   background: rgba(61, 48, 112, 0.469);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
@@ -130,7 +161,6 @@ body main .main--Section3__Projects {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 10em 0em;
 }
 body main .main--Section3__Projects div {
   width: 70%;
@@ -177,12 +207,12 @@ body main .main--Section4__Contact form {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
-body main .main--Section4__Contact form h2 {
-  margin-bottom: 0.7em;
+body main .main--Section4__Contact form h3 {
+  margin-bottom: 1em;
 }
 body main .main--Section4__Contact form input {
   width: 18em;
-  margin: 1em 0em;
+  margin: 0.7em 0em;
 }
 body main .main--Section4__Contact form textarea {
   width: 18em;
@@ -197,8 +227,63 @@ body main .main--Section4__Contact form a {
           backdrop-filter: blur(4px);
   padding: 0.4em;
   margin-top: 5em;
+  border-radius: 1em;
+}
+body main .main--Section4__Contact form a:hover {
+  background: rgba(65, 29, 211, 0.469);
 }
 
+@media (max-width: 675px) {
+  body main .main--Section2__aboutMe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10em 0em;
+  }
+  body main .main--Section2__aboutMe article {
+    width: 80%;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 30em;
+    text-align: center;
+    background: rgba(61, 48, 112, 0.469);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+  }
+  body main .main--Section2__aboutMe article .main--Section2__aboutMe--article__logo {
+    width: 12em;
+    border-radius: 1em;
+  }
+  body main .main--Section2__aboutMe article .main--Section2__aboutMe--article__contInfo {
+    width: 18em;
+  }
+  body main .main--Section2__aboutMe article .main--Section2__aboutMe--article__skills {
+    width: 8em;
+  }
+  body .popup {
+    width: 15em;
+    height: 10em;
+    background: rgba(61, 48, 112, 0.514);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    border-radius: 1em;
+    border: 1px solid rgba(204, 187, 187, 0.062);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 3.9em;
+    margin-bottom: 2em;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+}
 .popup {
   width: 15em;
   height: 10em;
@@ -253,6 +338,27 @@ body main .main--Section4__Contact form a {
 .popup .contenedor-Text p {
   opacity: 10;
 }
+.popup a {
+  -webkit-animation: fluido 10s ease-in-out infinite;
+          animation: fluido 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+@keyframes fluido {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 @-webkit-keyframes slidein {
   from {
     opacity: 0;
@@ -268,4 +374,8 @@ body main .main--Section4__Contact form a {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=main.css.map */
