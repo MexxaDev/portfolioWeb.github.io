@@ -32,7 +32,7 @@ body{
                     }
                 }
             }
-            a{
+            .main--section__article--btnContact{
                 color: white;
                 text-decoration: none;
                 padding: 0.8em;
@@ -42,7 +42,7 @@ body{
                 -webkit-backdrop-filter: blur(4px);
                 border-radius: 3em;
             }
-            a:hover{
+            .main--section__article--btnContact:hover{
                 background: rgba(65, 29, 211, 0.469);
 
             }
@@ -122,8 +122,12 @@ body{
             justify-content: center;
             margin: 10em;
             height: 20em;
+
             
             form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 height: 450px;
                 padding: 1em;
                 border-radius: 1em;

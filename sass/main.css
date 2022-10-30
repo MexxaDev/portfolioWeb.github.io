@@ -114,7 +114,7 @@ body main .main--Section1__Home article img {
 body main .main--Section1__Home article .main--Section_Home--redes .iconic:hover {
   cursor: pointer;
 }
-body main .main--Section1__Home a {
+body main .main--Section1__Home .main--section__article--btnContact {
   color: white;
   text-decoration: none;
   padding: 0.8em;
@@ -124,7 +124,7 @@ body main .main--Section1__Home a {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 3em;
 }
-body main .main--Section1__Home a:hover {
+body main .main--Section1__Home .main--section__article--btnContact:hover {
   background: rgba(65, 29, 211, 0.469);
 }
 body main .main--Section2__aboutMe {
@@ -199,6 +199,9 @@ body main .main--Section4__Contact {
   height: 20em;
 }
 body main .main--Section4__Contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 450px;
   padding: 1em;
   border-radius: 1em;
@@ -317,6 +320,9 @@ body main .main--Section4__Contact form a:hover {
   border-radius: 3em;
   margin: 0em 0.2em;
 }
+.popup .contenedor-btnes .circle-1:hover {
+  cursor: pointer;
+}
 .popup .contenedor-btnes .circle-2 {
   background-color: rgb(255, 251, 0);
   width: 0.7em;
@@ -324,12 +330,18 @@ body main .main--Section4__Contact form a:hover {
   border-radius: 3em;
   margin: 0em 0.2em;
 }
+.popup .contenedor-btnes .circle-2:hover {
+  cursor: pointer;
+}
 .popup .contenedor-btnes .circle-3 {
   background-color: rgb(94, 255, 0);
   width: 0.7em;
   height: 0.7em;
   border-radius: 3em;
   margin: 0em 0.2em;
+}
+.popup .contenedor-btnes .circle-3:hover {
+  cursor: pointer;
 }
 .popup .contenedor-Text {
   padding: 0.6em;
