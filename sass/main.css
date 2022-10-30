@@ -4,6 +4,8 @@ header {
   justify-content: center;
   position: fixed;
   z-index: 999;
+  position: fixed;
+  top: 0;
 }
 header nav {
   background: linear-gradient(-45deg, #660735, #e73c7e, #0C0F50, #050C34, #A3083F);
@@ -46,6 +48,9 @@ header nav a {
   color: white;
   margin: 0em 0.5em;
 }
+header nav a:hover {
+  border-bottom: 1px solid white;
+}
 
 body {
   background-image: url(https://images2.alphacoders.com/127/1274455.png);
@@ -57,6 +62,7 @@ body main {
   color: white;
 }
 body main .main--Section1__Home {
+  margin: 10em 0em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,6 +80,9 @@ body main .main--Section1__Home article img {
   width: 10em;
   border-radius: 10em;
 }
+body main .main--Section1__Home article .main--Section_Home--redes .iconic:hover {
+  cursor: pointer;
+}
 body main .main--Section1__Home a {
   color: white;
   text-decoration: none;
@@ -84,10 +93,14 @@ body main .main--Section1__Home a {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 3em;
 }
+body main .main--Section1__Home a:hover {
+  background: rgba(65, 29, 211, 0.469);
+}
 body main .main--Section2__aboutMe {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 10em 0em;
 }
 body main .main--Section2__aboutMe article {
   width: 80%;
@@ -96,7 +109,7 @@ body main .main--Section2__aboutMe article {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  height: 25em;
+  height: 20em;
   text-align: center;
   background: rgba(61, 48, 112, 0.469);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
@@ -104,11 +117,11 @@ body main .main--Section2__aboutMe article {
           backdrop-filter: blur(4px);
 }
 body main .main--Section2__aboutMe article .main--Section2__aboutMe--article__logo {
-  width: 10em;
-  border-radius: 3em;
+  width: 12em;
+  border-radius: 1em;
 }
 body main .main--Section2__aboutMe article .main--Section2__aboutMe--article__contInfo {
-  width: 20em;
+  width: 18em;
 }
 body main .main--Section2__aboutMe article .main--Section2__aboutMe--article__skills {
   width: 8em;
@@ -117,9 +130,10 @@ body main .main--Section3__Projects {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 10em 0em;
 }
 body main .main--Section3__Projects div {
-  width: 65%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -144,24 +158,114 @@ body main .main--Section3__Projects div article div img {
   width: 100%;
   height: 100%;
 }
+body main .main--Section3__Projects div article:hover {
+  background: rgba(63, 22, 212, 0.469);
+  cursor: pointer;
+}
 body main .main--Section4__Contact {
   display: flex;
   justify-content: center;
+  margin: 10em;
+  height: 20em;
 }
 body main .main--Section4__Contact form {
-  height: 2px;
+  height: 450px;
+  padding: 1em;
+  border-radius: 1em;
+  background: rgba(61, 48, 112, 0.469);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 body main .main--Section4__Contact form h2 {
-  margin-bottom: 1em;
+  margin-bottom: 0.7em;
 }
 body main .main--Section4__Contact form input {
   width: 18em;
+  margin: 1em 0em;
 }
 body main .main--Section4__Contact form textarea {
   width: 18em;
+  margin: 1em 0em;
+}
+body main .main--Section4__Contact form a {
+  text-decoration: none;
+  color: white;
+  background: rgba(61, 48, 112, 0.469);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 0.4em;
+  margin-top: 5em;
+}
+
+.popup {
+  width: 15em;
+  height: 10em;
+  background: rgba(61, 48, 112, 0.514);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.09);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 1em;
+  border: 1px solid rgba(204, 187, 187, 0.062);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+.popup .contenedor-btnes {
+  display: flex;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+  border: 1px solid rgba(204, 187, 187, 0.062);
+  padding: 0.4em;
+}
+.popup .contenedor-btnes .circle-1 {
+  background-color: red;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 3em;
+  margin: 0em 0.2em;
+}
+.popup .contenedor-btnes .circle-2 {
+  background-color: rgb(255, 251, 0);
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 3em;
+  margin: 0em 0.2em;
+}
+.popup .contenedor-btnes .circle-3 {
+  background-color: rgb(94, 255, 0);
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 3em;
+  margin: 0em 0.2em;
+}
+.popup .contenedor-Text {
+  padding: 0.6em;
+  color: rgb(232, 216, 250);
+}
+.popup .contenedor-Text p {
+  opacity: 10;
+}
+@-webkit-keyframes slidein {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
 }
 
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */

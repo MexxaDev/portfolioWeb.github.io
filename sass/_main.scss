@@ -6,6 +6,7 @@ body{
     main{
         color: white;
         .main--Section1__Home{
+            margin: 10em 0em;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -20,6 +21,12 @@ body{
                 img{
                     width: 10em;
                     border-radius: 10em;
+                    
+                }
+                .main--Section_Home--redes{
+                    .iconic:hover{
+                        cursor: pointer;
+                    }
                 }
             }
             a{
@@ -32,11 +39,15 @@ body{
                 -webkit-backdrop-filter: blur(4px);
                 border-radius: 3em;
             }
+            a:hover{
+                background: rgba(65, 29, 211, 0.469);
+            }
         }
         .main--Section2__aboutMe{
             width: 100%;
             display: flex;
             justify-content: center;
+            margin: 10em 0em;
             article{
                 width: 80%;
                 border-radius: 1em;
@@ -44,18 +55,18 @@ body{
                 align-items: center;
                 justify-content: space-evenly;
                 flex-wrap: wrap;
-                height: 25em;
+                height: 20em;
                 text-align: center;
                 background: rgba(61, 48, 112, 0.469);
                 box-shadow: 0 8px 32px 0 rgb(31 38 135 / 9%);
                 backdrop-filter: blur(4px);
-                
+
                 .main--Section2__aboutMe--article__logo{
-                    width: 10em;
-                    border-radius: 3em;
+                    width: 12em;
+                    border-radius: 1em;
                 }
                 .main--Section2__aboutMe--article__contInfo{
-                    width: 20em;
+                    width: 18em;
                 }
                 .main--Section2__aboutMe--article__skills{
                     width: 8em;
@@ -67,8 +78,9 @@ body{
             width: 100%;
             display: flex;
             justify-content: center;
+            margin: 10em 0em;
             div{
-                width: 65%;
+                width: 70%;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -95,22 +107,45 @@ body{
                         }
                     }
                 }
+                article:hover{
+                    background: rgba(63, 22, 212, 0.469);
+                    cursor: pointer;
+                }
             }
 
         }
         .main--Section4__Contact{
             display: flex;
             justify-content: center;
+            margin: 10em;
+            height: 20em;
+            
             form{
-                height: 2px;
+                height: 450px;
+                padding: 1em;
+                border-radius: 1em;
+                background: rgba(61, 48, 112, 0.469);
+                box-shadow: 0 8px 32px 0 rgb(31 38 135 / 9%);
+                backdrop-filter: blur(4px);
                 h2{
-                    margin-bottom: 1em; 
+                    margin-bottom: 0.7em; 
                 }
                 input{
                     width: 18em;
+                    margin: 1em 0em;
                 }
                 textarea{
                     width: 18em;
+                    margin: 1em 0em;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    background: rgba(61, 48, 112, 0.469);
+                    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 9%);
+                    backdrop-filter: blur(4px);
+                    padding: 0.4em;
+                    margin-top: 5em;
                 }
             }
         }
