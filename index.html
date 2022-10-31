@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/main.css">
-    <title>Nahuel A. Beeguer</title>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <title>Portfolio | Nahuel A. Beeguer</title>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
 
                     <a href="https://github.com/mexxadev">
                         <svg xmlns="http://www.w3.org/2000/svg" class=" iconic icon icon-tabler icon-tabler-brand-github"
-                        width="32" height="32" viewBox="0 0 24 24" vstroke-width="1.5" stroke="#6f32be" fill="none"
+                        width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path
@@ -74,7 +75,7 @@
                     </a>
 
                 </div>
-                <a class="main--section__article--btnContact" href="">Contact me</a>
+                <a class="main--section__article--btnContact" href="#Contact">Contact me</a>
             </article>
 
         </section>
@@ -84,8 +85,7 @@
                 <div class="main--Section2__aboutMe--article__contInfo">
                     <h2>About me</h2>
                     <p>
-                        Hello! I am a Front End developer.
-                        I am practicing and studying new technologies to improve in my area.
+                        Hello! I am a Front End developer. I am practicing and studying new technologies to improve in my area.
                     </p>
                 </div>
                 <div class="main--Section2__aboutMe--article__skills">
@@ -200,17 +200,17 @@
                 <div>
                     <label for="">Nombre</label>
                 </div>
-                <input type="text">
+                <input id="nombre" type="text">
                 <div>
                     <label for="">correo</label>
                 </div>
-                <input type="mail">
+                <input id="correo" type="mail" value="hola">
                 <div>
                     <label for="">Mensaje</label>
                 </div>
-                <textarea name="" id="" cols="20" rows="10"></textarea>
+                <textarea  name="" id="mensaje" cols="20" rows="10">hola</textarea>
                 <div>
-                    <a href="">Enviar</a>
+                    <a onclick="enviar()" id="btnEnviar">Enviar</a>
                 </div>
 
             </form>
@@ -226,7 +226,7 @@
             <div onclick="miniPopup()" class="circle-3"></div>
         </div>
         <div class="contenedor-Text">
-            <p id="popupText" class="contenedor-Text__parrafo" >Tambien ayudo a personas que esten empezando en el mundo del Desarrollo Web. Podes contactarme a travez de <a class="contenedor-Text__parrafo--btn" href="https://www.superprof.com.ar/crea-publica-primera-pagina-web-html-css-tus-primeros-pasos-desarrollo-web.html">Superprof</a></p>
+            <p id="popupText" class="contenedor-Text__parrafo" >Tambien ayudo a personas que esten empezando en el mundo del Desarrollo Web. Podes contactarme a travez de <a class="https://www.superprof.com.ar/crea-publica-primera-pagina-web-html-css-tus-primeros-pasos-desarrollo-web.html">Superprof</a></p>
 
         </div>
     </div>
@@ -234,6 +234,7 @@
 
 
     <script src="/js/popup.js"></script>
+    <script src="/js/form.js"></script>
 </body>
 
 </html>
