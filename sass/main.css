@@ -288,6 +288,20 @@ body main .main--Section4__Contact form a:hover {
             animation-name: slidein;
   }
 }
+@media (min-width: 1600px) {
+  body main .main--Section1__Home {
+    margin: 20em 0em;
+  }
+  body main .main--Section2__aboutMe {
+    margin: 20em 0em;
+  }
+  body main .main--Section3__Projects {
+    margin: 20em 0em;
+  }
+  body main .main--Section4__Contact {
+    margin: 20em 0em;
+  }
+}
 .popup {
   width: 15em;
   height: 10em;
@@ -392,4 +406,10 @@ body main .main--Section4__Contact form a:hover {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 12em;
+}
+
+@media (min-width: 1600) {
+  html {
+    scroll-padding-top: 5em;
+  }
 }/*# sourceMappingURL=main.css.map */
