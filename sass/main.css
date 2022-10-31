@@ -149,7 +149,8 @@ body main .main--Section2__aboutMe article {
           backdrop-filter: blur(4px);
 }
 body main .main--Section2__aboutMe article .main--Section2__aboutMe--article__logo {
-  width: 12em;
+  width: 20em;
+  height: 10em;
   border-radius: 1em;
 }
 body main .main--Section2__aboutMe article .main--Section2__aboutMe--article__contInfo {
